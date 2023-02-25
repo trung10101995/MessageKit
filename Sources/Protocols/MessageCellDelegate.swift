@@ -109,6 +109,16 @@ public protocol MessageCellDelegate: MessageLabelDelegate {
     /// method `messageForItem(at:indexPath:messagesCollectionView)`.
     func didTapAccessoryView(in cell: MessageCollectionViewCell)
 
+    /// Triggered when a tap occurs on the image.
+    ///
+    /// - Parameters:
+    ///   - cell: The image where the touch occurred.
+    ///
+    /// You can get a reference to the `MessageType` for the cell by using `UICollectionView`'s
+    /// `indexPath(for: cell)` method. Then using the returned `IndexPath` with the `MessagesDataSource`
+    /// method `messageForItem(at:indexPath:messagesCollectionView)`.
+    func didTapImage(in cell: MessageCollectionViewCell)
+ 
     /// Triggered when a tap occurs on the play button from audio cell.
     ///
     /// - Parameters:

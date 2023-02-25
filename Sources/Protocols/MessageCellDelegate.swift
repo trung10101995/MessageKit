@@ -231,6 +231,8 @@ public extension MessageCellDelegate {
     func didTapCellBottomLabel(in cell: MessageCollectionViewCell) {}
 
     func didTapMessageTopLabel(in cell: MessageCollectionViewCell) {}
+ 
+    func didTapImage(in _: MessageCollectionViewCell) { }
 
     func didTapPlayButton(in cell: AudioMessageCell) {}
 
